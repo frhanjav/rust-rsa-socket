@@ -1,0 +1,13 @@
+[package]
+name = "rsa-chat"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+num-bigint = { version = "0.4", features = ["rand", "serde"] } # <-- ADD "serde" HERE
+num-traits = "0.2"
+rand = "0.8"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+tokio = { version = "1", features = ["full"] }
+hex = "0.4"
